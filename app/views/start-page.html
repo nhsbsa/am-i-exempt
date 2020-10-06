@@ -1,0 +1,87 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+  <!-- Phase banner -->
+  <div class="app-phase-banner">
+    <div class="nhsuk-width-container app-phase-banner__container">
+      <p class="app-phase-banner__content">
+        <strong class="nhsuk-tag app-phase-banner__tag">
+          Prototype
+        </strong>
+        <span class="app-phase-banner__text">
+        This is a prototype - your <a href="#">feedback</a> will help us improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        Check and manage your exemption from paying NHS costs 
+      </h1>
+
+      <p>
+        Use this service to:
+      </p>
+
+      <ul>
+        <li>
+          check if you have a current valid exemption
+        </li>
+        <li>
+          use it as proof (digital exemption), if asked by a pharmacist or dentist
+        </li>
+        <li>
+          check when it expires or whether it has expired recently
+        </li>
+        <li>
+          update your name, address or billing details with us
+        </li>
+
+      </ul>
+
+{# <h2>What we can check</h2>
+<p>Because this service is new, we can currently tell you if you have a:</p>
+
+    <ul>
+    <li>prescription prepayment certificate (PPC)</li>
+    <li>medical exemption certificate</li>
+    <li>maternity exemption certificate</li>
+    <li>tax credit exemption certificate</li>
+    <li>HC2 certificate</li>
+    <li>Passported benefit from DWP</li>
+</ul> #}
+
+<h2>When you don't need to check</h2>
+
+<p>You're automatically entitled to free NHS prescriptions and NHS dental treatment if you are:</p>
+
+    <ul>
+    <li>under 16</li>
+    <li>under 19 and in full time education</li>
+</ul>
+      <a href="date-of-birth" class="nhsuk-button">
+        Start now
+      </a>
+    
+<div class="app-contact-panel">
+  
+  <h3 class="app-contact-panel__heading">Not sure what help is available to pay NHS costs?</h2>
+
+
+<p><a href="">Find out what help is available</a> for paying things like NHS prescriptions, glasses and NHS dental treatment.</p>
+
+</div>
+    </div>
+
+  </div>
+{% endblock %}

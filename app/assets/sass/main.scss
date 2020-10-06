@@ -10,3 +10,74 @@
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below... 
 ///////////////////////////////////////////
+
+.app-contact-panel {
+    margin-top:32px;
+    border-top:2px solid #005eb8
+   }
+   @media (min-width: 40.0625em) {
+    .app-contact-panel {
+     margin-top:40px
+    }
+   }
+   .app-contact-panel__heading {
+    font-weight:600;
+    font-size:20px;
+    font-size:1.25rem;
+    line-height:1.4;
+    padding-top:8px
+   }
+   @media (min-width: 40.0625em) {
+    .app-contact-panel__heading {
+     font-size:24px;
+     font-size:1.5rem;
+     line-height:1.33333
+    }
+   }
+   @media print {
+    .app-contact-panel__heading {
+     font-size:18pt;
+     line-height:1.15
+    }
+   }
+   @media (min-width: 40.0625em) {
+    .app-contact-panel__heading {
+     padding-top:16px
+    }
+   }
+   .app-img-guide {
+    width: 100%; }
+  
+.form-hint-list-item {
+    margin: 0 0 0.6em 0;
+    display: table;
+  }
+  
+  .form-hint-list-item__indicator {
+    vertical-align: middle;
+    margin-right: .26316em;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/images/bullet-icon.svg");
+  }
+  
+  
+  .form-hint-list-item--valid .form-hint-list-item__indicator {
+    background-image: url("/images/bsa/tick-green.svg");
+  }
+  
+  .form-hint-list-item--false {
+    color: black;
+  }
+  
+  .form-hint-list-item--false .form-hint-list-item__indicator {
+    background-image: url("/images/bsa/cross-red.svg");
+  }
+  
+  .form-hint-list-item__primary {
+    display: table-cell;
+    padding-right: 0.25em;
+  }

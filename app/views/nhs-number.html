@@ -1,0 +1,102 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <!-- Phase banner -->
+  <div class="app-phase-banner">
+    <div class="nhsuk-width-container app-phase-banner__container">
+      <p class="app-phase-banner__content">
+        <strong class="nhsuk-tag app-phase-banner__tag">
+          Prototype
+        </strong>
+        <span class="app-phase-banner__text">
+        This is a prototype - your <a href="#">feedback</a> will help us improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <form action="nhsnumber" method="post">
+
+        <fieldset class="nhsuk-fieldset">
+          <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+            Do you know your NHS number?
+          </legend>
+
+          <span class="nhsuk-hint nhsuk-u-margin-bottom-2">
+            Your NHS number is a 10 digit number, like <span class="nhsuk-u-nowrap">485 777 3456</span>.
+          </span>
+
+          <span class="nhsuk-hint">
+            You can find it on any letter the NHS has sent you, on a prescription, or by logging in to a GP practice online service.
+          </span>
+
+          <div class="nhsuk-form-group">
+
+            <div class="nhsuk-radios">
+
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="nhs-number-1" name="nhs-number" type="radio" value="yes">
+                <label class="nhsuk-label nhsuk-radios__label" for="nhs-number-1">
+                  Yes, I know my NHS number
+                </label>
+              </div>
+
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="nhs-number-2" name="nhs-number" type="radio" value="no">
+                <label class="nhsuk-label nhsuk-radios__label" for="nhs-number-2">
+                  No, I do not know my NHS number
+                </label>
+              </div>
+
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="nhs-number-3" name="nhs-number" type="radio" value="unsure">
+                <label class="nhsuk-label nhsuk-radios__label" for="nhs-number-3">
+                  I&#39;m not sure
+                </label>
+              </div>
+
+            </div>
+          </div>
+
+
+{{ details({
+  "text": "Why is this important?",
+  "HTML": "
+  <p>You NHS number is unique to you, and it can helps make sure we match you to your NHS records correctly.</p>
+    <p>You can find your NHS number on documents such as your:</p>
+    <ul>
+        <li>prescriptions</li>
+        <li>test results</li>
+        <li>hospital referral letters</li>
+        <li>appointment letters</li>
+    </ul>
+    <p>Ask your GP surgery for help if you can't find your NHS number.</p>
+  "
+}) }}
+
+        {{ button({
+          "text": "Continue",
+          "id": "btn_submit"
+        }) }}
+
+      </form>
+
+      {{ backLink({
+        "href": "start-page",
+        "text": "Back to start page"
+      }) }}
+
+    </div>
+  </div>
+
+{% endblock %}

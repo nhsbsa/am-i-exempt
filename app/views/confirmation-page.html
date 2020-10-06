@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Confirmation page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+  <!-- Phase banner -->
+  <div class="app-phase-banner">
+    <div class="nhsuk-width-container app-phase-banner__container">
+      <p class="app-phase-banner__content">
+        <strong class="nhsuk-tag app-phase-banner__tag">
+          Prototype
+        </strong>
+        <span class="app-phase-banner__text">
+        This is a prototype - your <a href="#">feedback</a> will help us improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <div class="nhsuk-panel nhsuk-panel--confirmation nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+
+        <h1 class="nhsuk-panel__title">
+             You currently have an NHS exemption
+          </h1>
+                    <div class="nhsuk-panel__body">
+            Expires on
+            <br>
+            <strong>21 November 2020</strong>
+          </div>
+
+      </div>
+
+      <h2>
+        Your exemption details
+      </h2>
+<table>
+            <tbody>
+               <tr>
+                  <td><strong>Name</strong></td>
+                  <td>Kevin Francis</td>
+               </tr>
+              <tr>
+                  <td><strong>NHS Number</strong></td>
+                  <td>485 777 3456</td>
+               </tr>
+               <tr>
+                  <td><strong>Date of birth</strong></td>
+                  <td>15 March 1984</td>
+               </tr>
+               <tr>
+                  <td><strong>Exempt from paying</strong></td>
+                  <td>
+                  <ul class="nhsuk-list nhsuk-list--tick" style="margin-bottom: 0px"> 
+                    <li>
+                      <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"></path>
+                      </svg>
+                      NHS prescriptions
+                    </li>
+                    <li>
+                      <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"></path>
+                      </svg>
+                      NHS dental check-ups and treatment
+                    </li>
+                  </ul>
+            </tbody>
+         </table>
+      <h3>
+        How to use this digital exemption
+      </h3>
+      <p>You can use this as proof today <strong>(13 September 2020)</strong>. </p>
+            <h4>
+        Precriptions
+      </h4>
+    </div>
+  </div>
+{% endblock %}
